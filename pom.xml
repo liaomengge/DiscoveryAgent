@@ -6,7 +6,7 @@
     <name>Nepxion Discovery Agent</name>
     <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
-    <version>1.0.1</version>
+    <version>2.0.0</version>
     <description>Nepxion Discovery Agent is a java agent to resolve loss of ThreadLocal in cross-thread scenario, such as Spring Async、Hystrix Thread、Runnable、Callable、Single Thread、Thread Pool、MDC</description>
     <url>http://www.nepxion.com</url>
 
@@ -18,6 +18,9 @@
     </modules>
 
     <properties>
+        <spring.boot.version>2.2.12.RELEASE</spring.boot.version>
+        <spring.cloud.version>Hoxton.SR9</spring.cloud.version>
+
         <javassist.version>3.23.2-GA</javassist.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,6 +28,20 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>discovery-agent-starter</artifactId>

@@ -16,7 +16,7 @@ public class DiscoveryZuulPlugin extends AbstractPlugin {
 
     @Override
     protected String getMatcherClassName() {
-        return "com.nepxion.discovery.plugin.strategy.zuul.context.ZuulStrategyContext";
+        return "com.netflix.zuul.context.RequestContext";
     }
 
     @Override

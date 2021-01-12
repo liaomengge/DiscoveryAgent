@@ -16,7 +16,7 @@ public class DiscoveryGatewayPlugin extends AbstractPlugin {
 
     @Override
     protected String getMatcherClassName() {
-        return "com.nepxion.discovery.plugin.strategy.gateway.context.GatewayStrategyContext";
+        return "";
     }
 
     @Override

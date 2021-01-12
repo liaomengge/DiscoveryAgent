@@ -16,7 +16,7 @@ public class DiscoveryServicePlugin extends AbstractPlugin {
 
     @Override
     protected String getMatcherClassName() {
-        return "com.nepxion.discovery.plugin.strategy.service.context.RestStrategyContext";
+        return "org.springframework.web.context.request.RequestContextHolder";
     }
 
     @Override
