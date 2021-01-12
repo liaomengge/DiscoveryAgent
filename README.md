@@ -12,17 +12,10 @@ ThreadLocal的作用是提供线程内的局部变量，在多线程环境下访
 
 ## 目录
 - [简介](#简介)
-- [请联系我](#请联系我)
 - [异步跨线程Agent](#异步跨线程Agent)
     - [插件获取](#插件获取)
     - [插件使用](#插件使用)
     - [插件扩展](#插件扩展)
-- [Star走势图](#Star走势图)
-
-## 请联系我
-微信、钉钉、公众号和文档
-
-![](http://nepxion.gitee.io/docs/zxing-doc/微信-1.jpg)![](http://nepxion.gitee.io/docs/zxing-doc/钉钉-1.jpg)![](http://nepxion.gitee.io/docs/zxing-doc/公众号-1.jpg)![](http://nepxion.gitee.io/docs/zxing-doc/文档-1.jpg)
 
 ## 异步跨线程Agent
 
