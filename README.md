@@ -19,11 +19,6 @@ ThreadLocal的作用是提供线程内的局部变量，在多线程环境下访
 
 ## 异步跨线程Agent
 
-### 插件获取
-插件获取方式有两种方式
-- 通过[https://github.com/Nepxion/DiscoveryAgent/releases](https://github.com/Nepxion/DiscoveryAgent/releases)下载最新版本的Discovery Agent
-- 编译[https://github.com/Nepxion/DiscoveryAgent](https://github.com/Nepxion/DiscoveryAgent)产生discovery-agent目录
-
 ### 插件使用
 - discovery-agent-starter-`$`{discovery.version}.jar为Agent引导启动程序，JVM启动时进行加载；discovery-agent/plugin目录包含discovery-agent-starter-plugin-strategy-`$`{discovery.version}.jar为Nepxion Discovery自带的实现方案，业务系统可以自定义plugin，解决业务自己定义的上下文跨线程传递
 - 通过如下-javaagent启动，基本格式，如下
@@ -297,3 +292,6 @@ public class MyApplication {
 
 完整示例，请参考[https://github.com/Nepxion/DiscoveryAgent/tree/master/discovery-agent-example](https://github.com/Nepxion/DiscoveryAgent/tree/master/discovery-agent-example)
 上述自定义插件的方式，即可解决使用者在线程切换时丢失ThreadLocal上下文的问题
+
+### 附录
+相比较原始Discovery Agent，该版本去掉nepxion的相关依赖，可以直接使用~
